@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+typedef struct {
+  int dia, mes, ano;
+  int idade;
+} data;
+
+typedef struc{
+	char nome[20];
+	char sobrenome[20];
+}nomecompleto;
+
+
+void age(data aniv, data atual) {
+  
+  if (atual.mes > (aniv).mes || (atual.mes == (aniv).mes && atual.dia >= (aniv).dia)) {
+    (aniv).idade = atual.ano - (aniv).ano;
+  }
+  else {
+    (aniv).idade = atual.ano - (aniv).ano - 1;
+  }
+
+  return;
+}
+
+void name(nome comp, nome inv){
+	
+}
+
+int main() {
+
+  data atualm,anivm;
+  nomecompleto normaln,invertidon;
+
+  
+  normaln.nome = 'Luan';
+  normaln.sobrenome = 'Cardoso';
+  
+
+  atualm.dia = 11;
+  atualm.mes = 6;
+  atualm.ano = 2012;
+
+  printf("Digite a data do seu nascimento (DDMMAAAA)\n");
+  scanf("%d %d %d", &(anivm.dia), &(anivm.mes), &(anivm.ano));
+
+  age(anivm,atualm);
+
+  printf("Sua idade eh %d\n", anivm.idade);
+
+  return(0);
+}

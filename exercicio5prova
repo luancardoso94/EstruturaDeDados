@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+typedef struct doador {
+      char nome_do_doador[20];
+      char tipo_sanguneo[3];
+      float rg;
+      float cpf;
+      float qnts_x_doou;
+};
+
